@@ -1,0 +1,4 @@
+baseURL = 'https://example.org/'
+languageCode = 'ko-KR'
+title = 'Skylar'
+theme = 'blowfish'
