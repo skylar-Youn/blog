@@ -4,41 +4,59 @@
 {{ with index .Site.Data $dataFile }}
 {{if .image }}
 <div>
-<a href="{{ $url }}" style="position: relative; display: flex; text-decoration: none; border: 1px solid #ccc; padding: 10px; border-radius: 8px; transition: transform 0.2s; height: 150px; overflow: hidden;">
+<a href="{{ $url }}" style="position: relative; display: flex; text-decoration: none; border: 1px solid #ccc; padding: 10px; border-radius: 8px; transition: transform 0.2s; height: 120px; overflow: hidden;">
   <div style="width: 150px; height: 100%; margin-right: 10px; border-right: 1px solid #ccc; padding-right: 10px; overflow: hidden; display: flex; justify-content: center; align-items: center;">
     <img src="{{ .image }}" alt="{{ .title | default "No title" }}" style="object-fit: contain; max-width: 100%; max-height: 100%;"/>
   </div>
-  <div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: center;">
-    <h3 style="margin: 0; font-size: 1em;">{{ .title | default "No Title" }}</h3>
-    <p style="margin: 0; font-size: 0.8em;">{{ .description | default "" }}</p>
-  </div>
-  <div style="position: absolute; bottom: 10px; right: 10px;">
-    <span style="text-decoration: none; color: rgba(0,0,0,0.5);">{{ $url }}</span>
-  </div>
+  <div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+    <div>
+    <h3 class="mobile-text-size" style="margin: 0; white-space: normal; overflow: hidden; text-overflow: ellipsis;">
+        {{ .title | default "No Title" }}
+    </h3>
+    </div>
+  <div>
+    <p class="mobile-text-size" style="margin: 0; overflow: hidden; text-overflow: ellipsis;">
+        {{ .description | default "" }}
+    </p>
+    </div>
+    <div style="text-align: right;bottom: 10px; right: 10px;">
+        <span class="mobile-text-size" style="text-decoration: none; color: rgba(0,0,0,0.5);">
+            {{ $url }}
+        </span>
+    </div>
+</div>
+
 </a>
 </div>
 {{else}}
 <div>
 <a href="{{ $url }}" style="position: relative; display: flex; text-decoration: none; border: 1px solid #ccc; padding: 10px; border-radius: 8px; transition: transform 0.2s; height: 100px; overflow: hidden;">
-  <div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: center;">
-    <h3 style="margin: 0; font-size: 1.5em;">{{ .title | default "No Title" }}</h3>
-    <p style="margin: 0; font-size: 0.8em;">{{ .description | default "" }}</p>
-  </div>
-  <div style="position: absolute; bottom: 10px; right: 10px;">
-    <span style="text-decoration: none; color: rgba(0,0,0,0.5);">{{ $url }}</span>
-  </div>
+   <div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+    <div>
+    <h3 class="mobile-text-size" style="margin: 0; white-space: normal; overflow: hidden; text-overflow: ellipsis;">
+        {{ .title | default "No Title" }}
+    </h3>
+    </div>
+  <div>
+    <p class="mobile-text-size" style="margin: 0; overflow: hidden; text-overflow: ellipsis;">
+        {{ .description | default "" }}
+    </p>
+    </div>
+    <div style="text-align: right;bottom: 10px; right: 10px;">
+        <span class="mobile-text-size" style="text-decoration: none; color: rgba(0,0,0,0.5);">
+            {{ $url }}
+        </span>
+    </div>
+</div>
  </a>
 </div>
 {{end}}
 
-
 {{ else }}
 <div>
-<a href="{{ $url }}" style="position: relative; display: flex; text-decoration: none; border: 1px solid #ccc; padding: 10px; border-radius: 8px; transition: transform 0.2s; height: 100px; overflow: hidden;">
+<a href="{{ $url }}" style="position: relative; display: flex; text-decoration: none; border: 1px solid #ccc; padding: 10px; border-radius: 8px; transition: transform 0.2s; height: 50px; overflow: hidden;">
   <div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: center;">
-  </div>
-  <div style="position: absolute; bottom: 10px; right: 10px;">
-    <span style="text-decoration: none; color: rgba(0,0,0,0.5);">{{ $url }}</span>
+    <span class="mobile-text-size" style="text-decoration: none; color: rgba(0,0,0,0.5);">{{ $url }}</span>
   </div>
  </a>
 </div>
@@ -46,3 +64,15 @@
 <p>No data found for {{ $sanitizedUrl }}.</p>
 <p>No data found for {{ $dataFile }}.</p> -->
 {{ end }}
+<style>
+@media (max-width: 768px) {
+  .mobile-text-size {
+    font-size: 0.7em;
+  }
+}
+@media (min-width: 768px) {
+  .mobile-text-size {
+    font-size: 1em;
+  }
+}
+</style>
