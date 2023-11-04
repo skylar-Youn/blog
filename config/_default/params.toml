@@ -1,0 +1,3 @@
+homepage.layout = "page"
+homepage.showRecent = true
+mainSections = ["posts"]
