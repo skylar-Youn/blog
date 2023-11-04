@@ -7,3 +7,18 @@ enableRobotsTXT = true
   changefreq = "daily"
   filename = "sitemap.xml"
   priority = 0.5
+
+
+ 
+
+
+
+[related]
+  includeNewer = true
+  threshold = 20
+  toLower = false
+[[related.indices]]
+    applyFilter = false
+    name = 'fragmentrefs'
+    type = 'fragments'
+    weight = 80

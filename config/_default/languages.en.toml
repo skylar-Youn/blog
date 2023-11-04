@@ -1,0 +1,13 @@
+languageCode = "en-US"
+languageName = "English"
+languageFlag = "US"
+languageNameShort = 'EN'
+weight = 1
+
+[params]
+  displayName = "EN"
+  isoCode = "en-US"
+  rtl = false
+
+
+  

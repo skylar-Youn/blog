@@ -1,5 +1,5 @@
 ---
-title: "Top 9 Circuit Simulation Online Sites"
+title: "회로 시뮬레이션 온라인 싸이트 9개"
 date: 2023-11-04 
 draft: false
 description: "Explore the top 9 online circuit simulation sites for electronics enthusiasts and educators. Improve your circuit design skills with these resources."

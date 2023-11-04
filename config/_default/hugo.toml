@@ -1,4 +1,31 @@
 baseURL = 'https://skylar-youn.github.io/blog/'
-languageCode = 'ko-KR'
+languageCode = 'en-US'
 title = 'Skylar'
 theme = 'blowfish'
+
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = true
+
+[languages]
+    [languages.en]
+        disabled = false
+        languageCode = 'en-US'
+        languageNameShort = 'en'
+        languageFlag = 'US'
+        languageName = 'English'
+        weight = 1
+        [languages.en.menu]
+        [languages.en.params]
+            displayName = "US"
+    [languages.ko]
+        disabled = false
+        languageCode = 'ko-KR'
+        languageNameShort = 'kr'
+        languageFlag = 'KR'
+        languageName = 'Korean'
+        weight = 2
+        [languages.ko.menu]
+        [languages.ko.params]
+            displayName = "KO"
+
+    

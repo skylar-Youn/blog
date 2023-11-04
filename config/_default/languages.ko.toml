@@ -1,0 +1,13 @@
+languageCode = "ko"
+languageName = "Korean"
+weight = 2
+
+[params]
+  displayName = "KO"
+  isoCode = "ko"
+  rtl = false
+
+
+
+
+  
