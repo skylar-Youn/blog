@@ -10,7 +10,7 @@
   </div>
   <div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
     <div>
-    <h3 class="mobile-text-size" style="margin: 0; white-space: normal; overflow: hidden; text-overflow: ellipsis;">
+    <h3 class="mobile-title-size" style="margin: 0; white-space: normal; overflow: hidden; text-overflow: ellipsis;">
         {{ .title | default "No Title" }}
     </h3>
     </div>
@@ -33,7 +33,7 @@
 <a href="{{ $url }}" style="position: relative; display: flex; text-decoration: none; border: 1px solid #ccc; padding: 10px; border-radius: 8px; transition: transform 0.2s; height: 100px; overflow: hidden;">
    <div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
     <div>
-    <h3 class="mobile-text-size" style="margin: 0; white-space: normal; overflow: hidden; text-overflow: ellipsis;">
+    <h3 class="mobile-title-size" style="margin: 0; white-space: normal; overflow: hidden; text-overflow: ellipsis;">
         {{ .title | default "No Title" }}
     </h3>
     </div>
@@ -65,14 +65,29 @@
 <p>No data found for {{ $dataFile }}.</p> -->
 {{ end }}
 <style>
-@media (max-width: 768px) {
+
+@media  (max-width: 400px) {
+  .mobile-title-size {
+    font-size: 0.5em;
+  }
   .mobile-text-size {
-    font-size: 0.7em;
+    font-size: 0.3em;
+  }
+}
+@media (min-width: 400px) and (max-width: 768px) {
+  .mobile-title-size {
+    font-size: 1em;
+  }
+  .mobile-text-size {
+    font-size: 0.6em;
   }
 }
 @media (min-width: 768px) {
+  .mobile-title-size {
+    font-size: 1.1em;
+  }
   .mobile-text-size {
-    font-size: 1em;
+    font-size: 0.7em;
   }
 }
 </style>
