@@ -1,10 +1,9 @@
 ---
-title: "회로 시뮬레이션 온라인 싸이트 9개"
+title: "Top 9 circuit simulation online sites"
 date: 2022-11-20T09:03:20-08:00
 draft: false
 ---
 
-# 9 Online Circuit Simulation Sites
 
 - **Falstad Circuit Simulator**: A free online simulator that allows you to draw and simulate circuits using a simple graphic interface. Supports a wide range of components and can simulate both analog and digital circuits.
 {{< link_block3 url="http://www.falstad.com/circuit/"  >}}
