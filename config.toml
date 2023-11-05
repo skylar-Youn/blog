@@ -8,11 +8,6 @@ enableRobotsTXT = true
   filename = "sitemap.xml"
   priority = 0.5
 
-
- 
-
-
-
 [related]
   includeNewer = true
   threshold = 20
