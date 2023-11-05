@@ -6,10 +6,11 @@ import configparser
 config = configparser.ConfigParser()
 # DeepL API URL 및 인증 키
 DEEPL_API_URL = "https://api-free.deepl.com/v2/translate"
+config.read('config.ini')
 DEEPL_AUTH_KEY =  config['DEFAULT']['DEEPL_API_KEY']
 
-# 번역할 대상 언어 설정 (예: 독일어 'DE')
-TARGET_LANG = "JA"
+# 번역할 대상 언어 설정 (예: 독일어 'DE',일본 "JA",영어 EN)
+TARGET_LANG = "EN"
 
 def translate_text(text, target_lang):
     headers = {

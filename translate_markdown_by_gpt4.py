@@ -4,10 +4,11 @@ import configparser
 config = configparser.ConfigParser()
  
 # 설정 파서 생성# 'DEFAULT' 섹션에서 'API_KEY' 가져오기
+config.read('config.ini')
+
 api_key = config['DEFAULT']['OPENAI_API_KEY']
 openai.api_key =api_key
 # 설정 파일 읽기
-config.read('config.ini')
 def translate_with_chatgpt(text, source_lang="en", target_lang="es"):
     try:
         # 번역 요청

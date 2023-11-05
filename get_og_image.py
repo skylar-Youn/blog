@@ -4,10 +4,12 @@ from urllib.parse import urljoin
 import json
 import argparse
 import os
+import re
 
 def get_og_data(url, timeout=2):
     try:
-        request = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+        headers = {'User-Agent': 'Mozilla/5.0'}
+        request = urllib.request.Request(url.encode('utf-8'), headers=headers)  # Encoding the URL to utf-8 here
         with urllib.request.urlopen(request, timeout=timeout) as response:
             html = response.read()
         soup = BeautifulSoup(html, 'html.parser')
@@ -37,14 +39,12 @@ def get_og_data(url, timeout=2):
             'title': title,
             'description': description
         }
-    except Exception as e:
+    except urllib.error.URLError as e:
         print(f"Error for URL {url}: {e}")
         return None
 
 def sanitize_url(url):
     return url.replace('.', '_').replace('https://', 'https_').replace('http://', 'http_').replace('/', '-').rstrip('/')
-
-import re
 
 # URL 패턴을 정의합니다.
 url_pattern = re.compile(r'http[s]?://[^\s<>"]+|www\.[^\s<>"]+')
@@ -70,9 +70,6 @@ def process_urls(file_path):
             else:
                 print(f"Skipping URL {url} due to error.")
         print("All URLs have been processed.")
-
-# 나머지 코드는 동일하게 유지합니다.
-
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Get OG data from URLs listed in a file')
