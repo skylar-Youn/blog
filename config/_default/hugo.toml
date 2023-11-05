@@ -27,5 +27,15 @@ defaultContentLanguageInSubdir = true
         [languages.ko.menu]
         [languages.ko.params]
             displayName = "KO"
+    [languages.ja]
+        disabled = false
+        languageCode = 'ja-JP'
+        languageNameShort = 'ja'
+        languageFlag = 'JP'
+        languageName = 'Japan'
+        weight = 3
+        [languages.ja.menu]
+        [languages.ja.params]
+            displayName = "JA"
 
     
