@@ -1,32 +1,88 @@
-homepage.layout = "page"
-homepage.showRecent = true
+
 mainSections = ["posts"]
+[firebase]
+    apiKey = "AIzaSyA8C1NlRWm7k0tOVdJHJ3eFdNTqMCxM1eU"
+    authDomain = "blog-66ab3.firebaseapp.com"
+    projectId = "blog-66ab3"
+    storageBucket = "blog-66ab3.appspot.com"
+    messagingSenderId = "658108103707"
+    appId = "1:658108103707:web:fe7a269e7aecc6b024ccbe"
+    measurementId = "G-0WCDL2W3DR"
+[header]
+  layout = "fixed" # valid options: basic, fixed, fixed-fill, fixed-fill-blur
 
-firebase.apiKey = "AIzaSyA8C1NlRWm7k0tOVdJHJ3eFdNTqMCxM1eU"
-firebase.authDomain = "blog-66ab3.firebaseapp.com"
-firebase.projectId = "blog-66ab3"
-firebase.storageBucket = "blog-66ab3.appspot.com"
-firebase.messagingSenderId = "658108103707"
-firebase.appId = "1:658108103707:web:fe7a269e7aecc6b024ccbe"
-firebase.measurementId = "G-0WCDL2W3DR"
+[homepage]
+  layout = "page" # valid options: page, profile, hero, card, background, custom
+  showRecent = true
+  showRecentItems = 12
+  showMoreLink = true
+  cardView = true
+  showMoreLinkDest= "/blog/en/posts"
+  cardViewScreenWidth = false
+  layoutBackgroundBlur = true # only used when layout equals background
+enableSearch = true
+enableCodeCopy = true
+autoSwitchAppearance = true
+disableImageOptimization = false
 
-article.showViews = true
-article.showLikes = true
-list.showViews = true 
-list.showLikes = true 
-taxonomy.showViews = true
-taxonomy.showLikes = true
-term.showViews = true
-term.showLikes = true
+highlightCurrentMenuArea = true
+smartTOC = true
+smartTOCHideUnfocusedChildren = false
 
-homepage.cardView = true
-homepage.layoutBackgroundBlur = true 
-article.showTaxonomies=true
-article.showAuthorsBadges=true 
-list.showHero = true
-homepage.showMoreLink = true
-homepage.showMoreLinkDest= "/blog/en/posts"
-article.showWordCount = false
-article.showComments = true
-list.showTableOfContents = true 
-article.seriesOpened = true
+[article]
+  showDate = false
+  showViews = true
+  showLikes = true
+  showDateUpdated = false
+  showAuthor = true
+  showBreadcrumbs = true
+  seriesOpened = false
+  showHeadingAnchors = true
+  showPagination = true
+  invertPagination = false
+  showReadingTime = true
+  showTableOfContents = true
+  showRelatedContent = true
+  relatedContentLimit = 6
+  showTaxonomies = true 
+  showAuthorsBadges = true 
+  showWordCount = false
+  showComments = true
+[list]
+  showHero = true
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  layoutBackgroundBlur = true # only used when heroStyle equals background
+  layoutBackgroundHeaderSpace = false
+  showBreadcrumbs = false
+  showSummary = false
+  showViews = true
+  showLikes = true
+  showTableOfContents = true
+  showCards = true
+  groupByYear = false
+  cardView = true
+  cardViewScreenWidth = false
+  constrainItemsWidth = false
+[sitemap]
+  excludedKinds = []
+
+[taxonomy]
+  showTermCount = true
+  showHero = true
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  showBreadcrumbs = false
+  showViews = true
+  showLikes = true
+  showTableOfContents = true
+  cardView = false
+
+[term]
+  showHero = true
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  showBreadcrumbs = false
+  showViews = true
+  showLikes = true
+  showTableOfContents = true
+  groupByYear = false
+  cardView = true
+  cardViewScreenWidth = false

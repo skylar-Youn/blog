@@ -1,7 +1,11 @@
 googleAnalytics = "G-T0F37H2CM6"
 # robots.txt
 enableRobotsTXT = true
+paginate = 100
+summaryLength = 30
 
+buildDrafts = false
+buildFuture = false
 # sitemap 생성
 [sitemap]
   changefreq = "daily"
@@ -38,20 +42,12 @@ enableRobotsTXT = true
       type = 'fragments'
       weight = 10
 
-article.showRelatedContent = true
-article.showTableOfContents = true 
-term.showTableOfContents = true
-taxonomy.showTableOfContents = true
-highlightCurrentMenuArea = true
-smartTOC = true
-smartTOCHideUnfocusedChildren = false
-enableSearch = true
+
 [taxonomies]
   tag = "tags"
   category = "categories"
   author = "authors"
   series = "series"
-disqusShortname = 'yourDisqusShortname'
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 [permalinks]
