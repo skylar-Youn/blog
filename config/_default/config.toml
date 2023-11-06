@@ -50,12 +50,3 @@ buildFuture = false
   series = "series"
 [outputs]
   home = ["HTML", "RSS", "JSON"]
-[permalinks]
-  [permalinks.page]
-    posts = '/posts/:year/:month/:slug/'
-    tutorials = '/training/:slug/'
-  [permalinks.section]
-    posts = '/posts/'
-    tutorials = '/training/'
-  [permalinks.term]
-    tags = '/:slug/'
