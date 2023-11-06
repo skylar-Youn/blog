@@ -1,3 +1,20 @@
 homepage.layout = "page"
 homepage.showRecent = true
 mainSections = ["posts"]
+
+firebase.apiKey = "AIzaSyA8C1NlRWm7k0tOVdJHJ3eFdNTqMCxM1eU"
+firebase.authDomain = "blog-66ab3.firebaseapp.com"
+firebase.projectId = "blog-66ab3"
+firebase.storageBucket = "blog-66ab3.appspot.com"
+firebase.messagingSenderId = "658108103707"
+firebase.appId = "1:658108103707:web:fe7a269e7aecc6b024ccbe"
+firebase.measurementId = "G-0WCDL2W3DR"
+
+article.showViews = true
+article.showLikes = true
+list.showViews = true 
+list.showLikes = true 
+taxonomy.showViews = true
+taxonomy.showLikes = true
+term.showViews = true
+term.showLikes = true
