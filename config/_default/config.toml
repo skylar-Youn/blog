@@ -1,0 +1,65 @@
+googleAnalytics = "G-T0F37H2CM6"
+# robots.txt
+enableRobotsTXT = true
+
+# sitemap 생성
+[sitemap]
+  changefreq = "daily"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[related]
+  threshold = 0
+  toLower = false
+
+    [[related.indices]]
+        name = "tags"
+        weight = 100
+
+    [[related.indices]]
+        name = "categories"
+        weight = 100
+
+    [[related.indices]]
+        name = "series"
+        weight = 50
+
+    [[related.indices]]
+        name = "authors"
+        weight = 20
+
+    [[related.indices]]
+        name = "date"
+        weight = 10
+
+    [[related.indices]]
+      applyFilter = false
+      name = 'fragmentrefs'
+      type = 'fragments'
+      weight = 10
+
+article.showRelatedContent = true
+article.showTableOfContents = true 
+term.showTableOfContents = true
+taxonomy.showTableOfContents = true
+highlightCurrentMenuArea = true
+smartTOC = true
+smartTOCHideUnfocusedChildren = false
+enableSearch = true
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  author = "authors"
+  series = "series"
+disqusShortname = 'yourDisqusShortname'
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+[permalinks]
+  [permalinks.page]
+    posts = '/posts/:year/:month/:slug/'
+    tutorials = '/training/:slug/'
+  [permalinks.section]
+    posts = '/posts/'
+    tutorials = '/training/'
+  [permalinks.term]
+    tags = '/:slug/'

@@ -17,6 +17,7 @@ defaultContentLanguageInSubdir = true
         [languages.en.menu]
         [languages.en.params]
             displayName = "US"
+            homepage.showMoreLinkDest= "/blog/en/posts"
     [languages.ko]
         disabled = false
         languageCode = 'ko-KR'
@@ -27,6 +28,7 @@ defaultContentLanguageInSubdir = true
         [languages.ko.menu]
         [languages.ko.params]
             displayName = "KO"
+            homepage.showMoreLinkDest= "/blog/ko/posts"
     [languages.ja]
         disabled = false
         languageCode = 'ja-JP'
@@ -37,5 +39,5 @@ defaultContentLanguageInSubdir = true
         [languages.ja.menu]
         [languages.ja.params]
             displayName = "JA"
-
+            homepage.showMoreLinkDest= "/blog/ja/posts"
     

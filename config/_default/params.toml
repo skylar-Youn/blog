@@ -19,4 +19,14 @@ taxonomy.showLikes = true
 term.showViews = true
 term.showLikes = true
 
-article.showTaxonomies = true
+homepage.cardView = true
+homepage.layoutBackgroundBlur = true 
+article.showTaxonomies=true
+article.showAuthorsBadges=true 
+list.showHero = true
+homepage.showMoreLink = true
+homepage.showMoreLinkDest= "/blog/en/posts"
+article.showWordCount = false
+article.showComments = true
+list.showTableOfContents = true 
+article.seriesOpened = true

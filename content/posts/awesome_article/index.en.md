@@ -11,8 +11,6 @@ authors:
     - skylar-Youn
 showAuthor: article.showAuthor
 ---
-
-
 - **Falstad Circuit Simulator**: A free online simulator that allows you to draw and simulate circuits using a simple graphic interface. Supports a wide range of components and can simulate both analog and digital circuits.
 {{< link_block3 url="http://www.falstad.com/circuit/"  >}}
 
