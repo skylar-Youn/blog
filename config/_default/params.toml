@@ -18,3 +18,5 @@ taxonomy.showViews = true
 taxonomy.showLikes = true
 term.showViews = true
 term.showLikes = true
+
+article.showTaxonomies = true
