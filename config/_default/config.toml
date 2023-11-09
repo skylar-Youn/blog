@@ -3,7 +3,7 @@ googleAnalytics = "G-T0F37H2CM6"
 enableRobotsTXT = true
 paginate = 100
 summaryLength = 30
-
+disqusShortname = 'skylar'
 buildDrafts = false
 buildFuture = false
 # sitemap 생성
